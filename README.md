@@ -13,3 +13,15 @@ Solution(__SOURCE_DIRECTORY__)
   |> run
 </pre>
 <br clear="left"/>
+<img src="https://logodix.com/logo/2165371.png" width="16%" align="right"><a href="https://github.com/KirillAldashkin/FindViewByIdCodeGen"><tt>KiDev.FindViewByIdCodegen</tt></a> - удобный кодогенератор для автоматической привязки элементов в Android Activity:
+<pre lang="cs">
+[SetView(Layout.activity_main)]
+public partial class MainActivity : Activity
+{
+    [FindById(Id.in_elem)] EditText textInput;
+    [FindById(Id.out_elem)] TextView textOutput;
+    // Метод OnCreate(Bundle) сгенерируется автоматически и привяжет 
+    // всё необходимое, после чего будет вызван метод AfterOnCreate() 
+    void AfterOnCreate() => textInput.TextChanged += (_, _) => textOutput.Text = textOutput.Text;
+}
+</pre>
