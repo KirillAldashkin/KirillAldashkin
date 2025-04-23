@@ -15,6 +15,19 @@ Solution(__SOURCE_DIRECTORY__)
 
 ----
 
+<a href="https://github.com/KirillAldashkin/TTFViewer"><tt>TTFViewer</tt></a>
+<div>Просмотр TTF шрифтов. Проходится по всем глифам и показывает их контуры.</div>
+
+----
+
+<a href="https://github.com/KirillAldashkin/OSExperiments"><tt>OSExperiments</tt></a>
+<div>Простенькая ОС. Загружается по MBR, умеет работать с IDE дисками и считывать FAT32 разделы</div>
+<pre>
+Практической цели не имела. Просто изучал x86 арзитектуру, C и x86-ассемблер
+</pre>
+
+----
+
 <a href="https://github.com/KirillAldashkin/FindViewByIdCodeGen"><tt>KiDev.FindViewByIdCodegen</tt></a>
 <div>Кодогенератор для автоматической привязки элементов в Android Activity</div>
 <pre lang="cs">
@@ -27,12 +40,4 @@ public partial class MainActivity : Activity
     // всё необходимое, после чего будет вызван метод AfterOnCreate() 
     void AfterOnCreate() => textInput.TextChanged += (_, _) => textOutput.Text = textOutput.Text;
 }
-</pre>
-
-----
-
-<a href="https://github.com/KirillAldashkin/OSExperiments"><tt>OSExperiments</tt></a>
-<div>Простенькая ОС. Загружается по MBR, умеет работать с IDE дисками и считывать FAT32 разделы</div>
-<pre>
-Практической цели не имела. Просто изучал x86 арзитектуру, C и x86-ассемблер
 </pre>
